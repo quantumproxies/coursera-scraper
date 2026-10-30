@@ -1,0 +1,101 @@
+{
+ "run_id": "cmvksiegt0u9k41o5uzmlgve2",
+ "slug": "coursera_courses",
+ "version": "1.0.1",
+ "status": "done",
+ "input": {
+  "query": "python",
+  "max_results": 3
+ },
+ "count": 3,
+ "partial": true,
+ "finished_at": "2026-10-23T09:51:18.515Z",
+ "results": [
+  {
+   "id": "s12n~F-h1g0w7EeWeOApO_l5R1w",
+   "url": "https://www.coursera.org/specializations/python",
+   "rank": 1,
+   "image": "https://d2j5ihb19pt1hq.cloudfront.net/sdp_page/s12n_logos/python.jpg",
+   "level": "Beginner",
+   "title": "Python for Everybody",
+   "is_new": false,
+   "rating": 4.82,
+   "skills": [
+    "Database Design",
+    "Data Processing",
+    "Debugging",
+    "Web Scraping",
+    "File I/O",
+    "Data Visualization",
+    "Relational Databases",
+    "Restful API"
+   ],
+   "is_free": false,
+   "partner": "University of Michigan",
+   "reviews": 280793,
+   "duration": "3 - 6 Months",
+   "partners": [
+    "University of Michigan"
+   ],
+   "sponsored": false,
+   "product_type": "Specialization",
+   "in_coursera_plus": true
+  },
+  {
+   "id": "course~ejOz7RDUEei99hK0xs-tsg",
+   "url": "https://www.coursera.org/learn/python-for-applied-data-science-ai",
+   "rank": 2,
+   "image": "https://s3.amazonaws.com/coursera-course-photos/b7/7cc18d8ade45138182ed8832a41860/V1_arc_scatter_PythonforDataScience-AI-Development_IBM.webp",
+   "level": "Beginner",
+   "title": "Python for Data Science, AI & Development",
+   "is_new": false,
+   "rating": 4.62,
+   "skills": [
+    "Python Programming",
+    "NumPy",
+    "Data Analysis"
+   ],
+   "is_free": false,
+   "partner": "IBM",
+   "reviews": 43866,
+   "duration": "1 - 3 Months",
+   "partners": [
+    "IBM"
+   ],
+   "sponsored": false,
+   "product_type": "Course",
+   "in_coursera_plus": true
+  },
+  {
+   "id": "course~8D3R5HiaEeioIg7r4jw_PA",
+   "url": "https://www.coursera.org/learn/python-crash-course",
+   "rank": 3,
+   "image": "https://s3.amazonaws.com/coursera-course-photos/4d/a0200500ab41a7a1d00c96d470475c/GCC-Coursera-thumbnail-ITwithPython-crash-course-python-christine.png",
+   "level": "Beginner",
+   "title": "Crash Course on Python",
+   "is_new": false,
+   "rating": 4.77,
+   "skills": [
+    "Program Development",
+    "Programming Principles",
+    "Scripting",
+    "Python Programming",
+    "Computer Programming",
+    "Data Structures",
+    "Debugging",
+    "Computational Logic"
+   ],
+   "is_free": false,
+   "partner": "Google",
+   "reviews": 40623,
+   "duration": "1 - 3 Months",
+   "partners": [
+    "Google"
+   ],
+   "sponsored": false,
+   "product_type": "Course",
+   "in_coursera_plus": true
+  }
+ ],
+ "_note": "Real run of 2026-10-23; all three results kept, skills lists cut to the first eight (the first result lists 20, the third 10)."
+}

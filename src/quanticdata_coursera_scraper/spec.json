@@ -1,0 +1,89 @@
+{
+ "cli": "coursera-scraper",
+ "name": "Coursera Scraper",
+ "version": "0.1.0",
+ "description": "Coursera scraper for Python and the command line: course search by keyword with partner, rating, exact review count, level, duration, skills and product type (course, specialization, certificate, degree), as JSON or CSV. Free and open source; sign in with your QuanticData account, no proxies or headless browser to run.",
+ "links": {
+  "repo": "https://github.com/quantumproxies/coursera-scraper",
+  "page": "https://quanticdata.io/collectors/coursera-scraper-api/?utm_source=github&utm_medium=cli&utm_campaign=coursera-scraper",
+  "billing": "https://app.quanticdata.io/billing?utm_source=github&utm_medium=cli&utm_campaign=coursera-scraper",
+  "pricing": "https://quanticdata.io/pricing/?utm_source=github&utm_medium=cli&utm_campaign=coursera-scraper"
+ },
+ "commands": [
+  {
+   "name": "search",
+   "collector": "coursera_courses",
+   "method": "search",
+   "help": "Coursera search results for a topic",
+   "description": "Search Coursera by keyword — partner, rating, review count, level and duration per course.",
+   "positional": "query",
+   "positional_is_list": false,
+   "positional_optional": false,
+   "columns": [
+    "rank",
+    "title",
+    "partner",
+    "rating",
+    "reviews",
+    "level",
+    "duration",
+    "product_type"
+   ],
+   "sample": "coursera_courses",
+   "inputs": [
+    {
+     "name": "query",
+     "type": "string",
+     "required": true,
+     "description": "What to search Coursera for — a topic, technology or skill.",
+     "arg": "query"
+    },
+    {
+     "name": "level",
+     "type": "string",
+     "required": false,
+     "description": "Restrict to one difficulty level. Coursera's own filter values.",
+     "enum": [
+      "Beginner",
+      "Intermediate",
+      "Advanced",
+      "Mixed"
+     ],
+     "arg": "level"
+    },
+    {
+     "name": "product_type",
+     "type": "string",
+     "required": false,
+     "description": "Restrict to one kind of product. Coursera's own filter values — use \"Courses\" to exclude degrees and certificates.",
+     "enum": [
+      "Courses",
+      "Specializations",
+      "Guided Projects",
+      "Professional Certificates",
+      "Projects",
+      "Degrees"
+     ],
+     "arg": "product_type"
+    },
+    {
+     "name": "country",
+     "type": "string",
+     "required": false,
+     "description": "Country to search from, as an ISO 3166-1 alpha-2 code (default us).",
+     "arg": "country"
+    },
+    {
+     "name": "max_results",
+     "type": "integer",
+     "required": false,
+     "description": "How many results to deliver at most (1–60). You pay only for delivered results.",
+     "min": 1,
+     "max": 60,
+     "default": 12,
+     "arg": "max_results"
+    }
+   ]
+  }
+ ]
+}
